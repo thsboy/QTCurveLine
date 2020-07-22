@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBC3CE7C24C7FE5A00118CFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE7B24C7FE5A00118CFA /* AppDelegate.m */; };
+		EBC3CE7F24C7FE5A00118CFA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE7E24C7FE5A00118CFA /* SceneDelegate.m */; };
+		EBC3CE8224C7FE5A00118CFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE8124C7FE5A00118CFA /* ViewController.m */; };
+		EBC3CE8524C7FE5A00118CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC3CE8324C7FE5A00118CFA /* Main.storyboard */; };
+		EBC3CE8A24C7FE6600118CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC3CE8924C7FE6600118CFA /* Assets.xcassets */; };
+		EBC3CE8D24C7FE6600118CFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC3CE8B24C7FE6600118CFA /* LaunchScreen.storyboard */; };
+		EBC3CE9024C7FE6600118CFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE8F24C7FE6600118CFA /* main.m */; };
+		EBC3CE9924C83D9800118CFA /* QTCurveLine.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE9824C83D9800118CFA /* QTCurveLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBC3CE7724C7FE5A00118CFA /* QTCurveLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCurveLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC3CE7A24C7FE5A00118CFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBC3CE7B24C7FE5A00118CFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBC3CE7D24C7FE5A00118CFA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EBC3CE7E24C7FE5A00118CFA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EBC3CE8024C7FE5A00118CFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBC3CE8124C7FE5A00118CFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBC3CE8424C7FE5A00118CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBC3CE8924C7FE6600118CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC3CE8C24C7FE6600118CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBC3CE8E24C7FE6600118CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC3CE8F24C7FE6600118CFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBC3CE9724C83D9800118CFA /* QTCurveLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTCurveLine.h; sourceTree = "<group>"; };
+		EBC3CE9824C83D9800118CFA /* QTCurveLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTCurveLine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBC3CE7424C7FE5A00118CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBC3CE6E24C7FE5A00118CFA = {
+			isa = PBXGroup;
+			children = (
+				EBC3CE7924C7FE5A00118CFA /* QTCurveLineDemo */,
+				EBC3CE7824C7FE5A00118CFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC3CE7824C7FE5A00118CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC3CE7724C7FE5A00118CFA /* QTCurveLineDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC3CE7924C7FE5A00118CFA /* QTCurveLineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EBC3CE9624C83D7800118CFA /* QTCurveLine */,
+				EBC3CE7A24C7FE5A00118CFA /* AppDelegate.h */,
+				EBC3CE7B24C7FE5A00118CFA /* AppDelegate.m */,
+				EBC3CE7D24C7FE5A00118CFA /* SceneDelegate.h */,
+				EBC3CE7E24C7FE5A00118CFA /* SceneDelegate.m */,
+				EBC3CE8024C7FE5A00118CFA /* ViewController.h */,
+				EBC3CE8124C7FE5A00118CFA /* ViewController.m */,
+				EBC3CE8324C7FE5A00118CFA /* Main.storyboard */,
+				EBC3CE8924C7FE6600118CFA /* Assets.xcassets */,
+				EBC3CE8B24C7FE6600118CFA /* LaunchScreen.storyboard */,
+				EBC3CE8E24C7FE6600118CFA /* Info.plist */,
+				EBC3CE8F24C7FE6600118CFA /* main.m */,
+			);
+			path = QTCurveLineDemo;
+			sourceTree = "<group>";
+		};
+		EBC3CE9624C83D7800118CFA /* QTCurveLine */ = {
+			isa = PBXGroup;
+			children = (
+				EBC3CE9724C83D9800118CFA /* QTCurveLine.h */,
+				EBC3CE9824C83D9800118CFA /* QTCurveLine.m */,
+			);
+			path = QTCurveLine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBC3CE7624C7FE5A00118CFA /* QTCurveLineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC3CE9324C7FE6600118CFA /* Build configuration list for PBXNativeTarget "QTCurveLineDemo" */;
+			buildPhases = (
+				EBC3CE7324C7FE5A00118CFA /* Sources */,
+				EBC3CE7424C7FE5A00118CFA /* Frameworks */,
+				EBC3CE7524C7FE5A00118CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QTCurveLineDemo;
+			productName = QTCurveLineDemo;
+			productReference = EBC3CE7724C7FE5A00118CFA /* QTCurveLineDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBC3CE6F24C7FE5A00118CFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = qdd;
+				TargetAttributes = {
+					EBC3CE7624C7FE5A00118CFA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = EBC3CE7224C7FE5A00118CFA /* Build configuration list for PBXProject "QTCurveLineDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBC3CE6E24C7FE5A00118CFA;
+			productRefGroup = EBC3CE7824C7FE5A00118CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBC3CE7624C7FE5A00118CFA /* QTCurveLineDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBC3CE7524C7FE5A00118CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC3CE8D24C7FE6600118CFA /* LaunchScreen.storyboard in Resources */,
+				EBC3CE8A24C7FE6600118CFA /* Assets.xcassets in Resources */,
+				EBC3CE8524C7FE5A00118CFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBC3CE7324C7FE5A00118CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC3CE9024C7FE6600118CFA /* main.m in Sources */,
+				EBC3CE8224C7FE5A00118CFA /* ViewController.m in Sources */,
+				EBC3CE9924C83D9800118CFA /* QTCurveLine.m in Sources */,
+				EBC3CE7C24C7FE5A00118CFA /* AppDelegate.m in Sources */,
+				EBC3CE7F24C7FE5A00118CFA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBC3CE8324C7FE5A00118CFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC3CE8424C7FE5A00118CFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBC3CE8B24C7FE6600118CFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBC3CE8C24C7FE6600118CFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBC3CE9124C7FE6600118CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBC3CE9224C7FE6600118CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBC3CE9424C7FE6600118CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVKQ2M2J47;
+				INFOPLIST_FILE = QTCurveLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdd.orders.QTCurveLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EBC3CE9524C7FE6600118CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVKQ2M2J47;
+				INFOPLIST_FILE = QTCurveLineDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdd.orders.QTCurveLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBC3CE7224C7FE5A00118CFA /* Build configuration list for PBXProject "QTCurveLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC3CE9124C7FE6600118CFA /* Debug */,
+				EBC3CE9224C7FE6600118CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC3CE9324C7FE6600118CFA /* Build configuration list for PBXNativeTarget "QTCurveLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC3CE9424C7FE6600118CFA /* Debug */,
+				EBC3CE9524C7FE6600118CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBC3CE6F24C7FE5A00118CFA /* Project object */;
+}
