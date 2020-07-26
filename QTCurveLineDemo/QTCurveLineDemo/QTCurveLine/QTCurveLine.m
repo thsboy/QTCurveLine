@@ -45,7 +45,8 @@
 }
 
 -(void)removeSubLayer{
-    for (CALayer *layer in self.layer.sublayers) {
+    NSArray *array = [self.layer.sublayers copy];
+    for (CALayer *layer in array) {
         if ([layer isKindOfClass:[CAShapeLayer class]]) {
             [layer removeFromSuperlayer];
         }
@@ -84,6 +85,7 @@
         if (i == 0) {
             //路径起点
             [path moveToPoint:p2];
+            cPoint = p2;//起点这里的 控制点设为起点本身。
         }else{
             CGPoint p1 = [array[i - 1] CGPointValue];//第一个锚点
             if (i< array.count - 1) {
@@ -92,14 +94,15 @@
                 rate = (p3.y - p1.y)/(p3.x- p1.x);
             }
             int a = 3;//控制点取 stepWidth/a
-            if (i == 1) {
-                //算P(0) 、P(1)的第一个控制点，取斜率等于 P(i+1)/P(i-1),即 P(3)/P(1)
-                cPoint = CGPointMake(p1.x + self.stepWidth/a, p1.y+ rate*self.stepWidth/a);
-            }
-            //第一个控制点
+            //第一个控制点 根据上一次 的Pc2共线的点得出
             pc1 =  cPoint;
-            //第二个控制点、取斜率等于 P(i+1)/P(i-1)
-            pc2 = CGPointMake(p2.x - self.stepWidth/a, p2.y - rate*self.stepWidth/a);
+            if (i == array.count - 1) {
+                //终点这里的 控制点设为终点本身。
+                pc2 = p2;
+            }else{
+                //第二个控制点、取斜率等于 P(i+1)/P(i-1)
+                pc2 = CGPointMake(p2.x - self.stepWidth/a, p2.y - rate*self.stepWidth/a);
+            }
             //绘制锚点
             if (!self.anchorPointHiden) {
                 [self addPoint:layer array:@[[NSValue valueWithCGPoint:p1],[NSValue valueWithCGPoint:p2]] diam:self.diam color:self.anchorColor];
