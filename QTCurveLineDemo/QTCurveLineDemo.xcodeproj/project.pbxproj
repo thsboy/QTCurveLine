@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB8DB6CD24FF762100AC5E26 /* QTChartLine.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8DB6CC24FF762100AC5E26 /* QTChartLine.m */; };
+		EB8F01B524D0A49C005CCE80 /* up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB8F01B424D0A49B005CCE80 /* up@3x.png */; };
 		EBC3CE7C24C7FE5A00118CFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE7B24C7FE5A00118CFA /* AppDelegate.m */; };
 		EBC3CE7F24C7FE5A00118CFA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE7E24C7FE5A00118CFA /* SceneDelegate.m */; };
 		EBC3CE8224C7FE5A00118CFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC3CE8124C7FE5A00118CFA /* ViewController.m */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB8DB6CB24FF762100AC5E26 /* QTChartLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTChartLine.h; sourceTree = "<group>"; };
+		EB8DB6CC24FF762100AC5E26 /* QTChartLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTChartLine.m; sourceTree = "<group>"; };
+		EB8F01B424D0A49B005CCE80 /* up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up@3x.png"; sourceTree = "<group>"; };
 		EBC3CE7724C7FE5A00118CFA /* QTCurveLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QTCurveLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC3CE7A24C7FE5A00118CFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBC3CE7B24C7FE5A00118CFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		EBC3CE6E24C7FE5A00118CFA = {
 			isa = PBXGroup;
 			children = (
+				EB8F01B424D0A49B005CCE80 /* up@3x.png */,
 				EBC3CE7924C7FE5A00118CFA /* QTCurveLineDemo */,
 				EBC3CE7824C7FE5A00118CFA /* Products */,
 			);
@@ -71,6 +77,8 @@
 				EBC3CE7E24C7FE5A00118CFA /* SceneDelegate.m */,
 				EBC3CE8024C7FE5A00118CFA /* ViewController.h */,
 				EBC3CE8124C7FE5A00118CFA /* ViewController.m */,
+				EB8DB6CB24FF762100AC5E26 /* QTChartLine.h */,
+				EB8DB6CC24FF762100AC5E26 /* QTChartLine.m */,
 				EBC3CE8324C7FE5A00118CFA /* Main.storyboard */,
 				EBC3CE8924C7FE6600118CFA /* Assets.xcassets */,
 				EBC3CE8B24C7FE6600118CFA /* LaunchScreen.storyboard */,
@@ -146,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8F01B524D0A49C005CCE80 /* up@3x.png in Resources */,
 				EBC3CE8D24C7FE6600118CFA /* LaunchScreen.storyboard in Resources */,
 				EBC3CE8A24C7FE6600118CFA /* Assets.xcassets in Resources */,
 				EBC3CE8524C7FE5A00118CFA /* Main.storyboard in Resources */,
@@ -160,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC3CE9024C7FE6600118CFA /* main.m in Sources */,
+				EB8DB6CD24FF762100AC5E26 /* QTChartLine.m in Sources */,
 				EBC3CE8224C7FE5A00118CFA /* ViewController.m in Sources */,
 				EBC3CE9924C83D9800118CFA /* QTCurveLine.m in Sources */,
 				EBC3CE7C24C7FE5A00118CFA /* AppDelegate.m in Sources */,
