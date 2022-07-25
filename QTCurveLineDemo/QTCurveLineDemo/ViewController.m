@@ -30,14 +30,36 @@
 
 @property (nonatomic,strong) NSTimer *timer;
 
+@property (nonatomic,strong) UITextField *arrCountField;
+@property (nonatomic,strong) UITextField *maxField;
+
 
 //
 @property (nonatomic,strong) NSArray *originArray;
 @property (nonatomic,strong) NSArray *refreshArray;
 
+
+@property (nonatomic,assign) int arrCount;
+@property (nonatomic,assign) int maxNum;
+
 @end
 
 @implementation ViewController
+
+-(int)arrCount{
+    _arrCount = self.arrCountField.text.intValue;
+    if (_arrCount <= 0) {
+        _arrCount = 20;
+    }
+    return  _arrCount;
+}
+-(int)maxNum{
+    _maxNum = self.maxField.text.intValue;
+    if (_maxNum <= 0){
+        _maxNum = 100;
+    }
+    return  _maxNum;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,8 +96,27 @@
     [self.view addSubview:self.autoBtn];
     [self.autoBtn  addTarget:self action:@selector(autoBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
-    self.curve = [[QTCurveLine alloc] initWithFrame:CGRectMake(15, kNaviHeight + 80, kScreenWidth - 30, 200)];
-    /* 自定义样式相关属性
+    self.arrCountField = [[UITextField alloc] initWithFrame:CGRectMake(15, kNaviHeight + 65, kScreenWidth/2 - 30, 40)];
+    self.arrCountField.layer.borderColor = [UIColor redColor].CGColor;
+    self.arrCountField.layer.borderWidth = 0.6;
+    self.arrCountField.layer.masksToBounds = YES;
+    self.arrCountField.layer.cornerRadius = 5;
+    self.arrCountField.font = [UIFont systemFontOfSize:16.0f];
+    self.arrCountField.placeholder = @"输入数组元素个数";
+    [self.view addSubview:self.arrCountField];
+    
+    self.maxField = [[UITextField alloc] initWithFrame:CGRectMake(kScreenWidth/2 + 15, kNaviHeight + 65, kScreenWidth/2 - 30, 40)];
+    self.maxField.layer.borderColor = [UIColor redColor].CGColor;
+    self.maxField.layer.borderWidth = 0.6;
+    self.maxField.layer.masksToBounds = YES;
+    self.maxField.layer.cornerRadius = 5;
+    self.maxField.font = [UIFont systemFontOfSize:16.0f];
+    self.maxField.placeholder = @"输入最大值（振幅）";
+    [self.view addSubview:self.maxField];
+    
+    /*
+    self.curve = [[QTCurveLine alloc] initWithFrame:CGRectMake(15, kNaviHeight + 90, kScreenWidth - 30, 200)];
+    // 自定义样式相关属性
         self.curve.anchorColor = [UIColor greenColor];
         self.curve.diam = 6.0f;
         self.curve.strokeColor = [UIColor orangeColor];
@@ -85,21 +126,17 @@
         self.curve.showAinimation = YES;
         self.curve.duration = 5.0f;
         self.curve.repeatCount = 1;
-     */
-//    [self.view addSubview:self.curve];
-    //
+    [self.view addSubview:self.curve];
+    */
     self.chart = [[QTChartLine alloc] initWithFrame:CGRectMake(15, kNaviHeight + 80 + 250, kScreenWidth - 30, 200)];
     [self.view addSubview:self.chart];
 }
 
 -(void)refreshDataAndDraw{
     NSMutableArray *array = [NSMutableArray new];
-    for (int i = 0; i < 10000; i++) {
-        int randomMax = 1000;
+    for (int i = 0; i < self.arrCount; i++) {
+        int randomMax = self.maxNum;
         float value = rand()%randomMax;
-        if (i < 10000/2) {
-            value = [self.originArray[i] floatValue];
-        }
         [array addObject:[NSNumber numberWithFloat:value]];
     }
     self.refreshArray = array;
@@ -109,41 +146,43 @@
 
 -(void)originDraw{
     NSMutableArray *array = [NSMutableArray new];
-    for (int i = 0; i < 10000; i++) {
-        int randomMax = 1000;
+    for (int i = 0; i < self.arrCount; i++) {
+        int randomMax = self.maxNum;
         float value = rand()%randomMax;
         [array addObject:[NSNumber numberWithFloat:value]];
     }
     self.originArray = array;
     //
-//    self.curve.maxValue = 1000;
+//    self.curve.maxValue = self.maxNum;
 //    self.curve.dataSource = array;
 //    self.curve.showAinimation = YES;
 //    [self.curve draw];
     //
-    self.chart.maxValue = 1000;
+    self.chart.maxValue = self.maxNum;
     self.chart.dataSource = array;
     [self.chart draw];
 }
 
 -(void)btnClick{
-    NSLog(@"btnClick");
-//    [self refreshDataAndDraw];
+    [self.view endEditing:YES];
     [self originDraw];
 }
+
+
 
 /*
  * 自动刷新
  */
 -(void)autoBtnClick{
+    [self.view endEditing:YES];
     self.autoBtn.selected = !self.autoBtn.selected;
-//    if (self.autoBtn.selected) {
-//        [self.timer fire];
-//        [self.timer setFireDate:[NSDate date]];
-//    }else{
-//        [self.timer setFireDate:[NSDate distantFuture]];
-//    }
-    [self refreshDataAndDraw];
+    if (self.autoBtn.selected) {
+        [self.timer fire];
+        [self.timer setFireDate:[NSDate date]];
+    }else{
+        [self.timer setFireDate:[NSDate distantFuture]];
+    }
+//    [self refreshDataAndDraw];
 }
 
 -(NSTimer *)timer{

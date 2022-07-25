@@ -160,9 +160,7 @@
 
 #pragma mark -给定缺省值
 -(float)stepWidth{
-    if (_stepWidth <= 0) {
-        _stepWidth = self.bounds.size.width/self.dataSource.count;
-    }
+    _stepWidth = self.bounds.size.width/self.dataSource.count;
     return _stepWidth;
 }
 
